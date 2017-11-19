@@ -1,0 +1,684 @@
+@charset "UTF-8";
+* {
+	padding: 0;
+	margin: 0
+}
+
+li,
+ul {
+	list-style: none
+}
+
+a {
+	text-decoration: none
+}
+
+header {
+	width: 80%;
+	height: 60px;
+	margin: 63px auto 0
+}
+
+header div {
+	float: right
+}
+
+header div ul {
+	width: 100%;
+	height: 25px;
+	background: #fff;
+	display: flex;
+	justify-content: space-around
+}
+
+header div ul li {
+	width: 23px;
+	float: left;
+	white-space: nowrap
+}
+
+header div ul li a {
+	display: inline-block;
+	font-size: 12px;
+	width: 100%;
+	height: 100%
+}
+
+header div ul li .mailbox {
+	background: url(../../dist/img/postoffice.png) no-repeat -3px 0
+}
+
+header div ul li .message {
+	background: url(../../dist/img/postoffice.png) no-repeat -28px 0
+}
+
+header div ul li .appDownLoad {
+	background: url(../../dist/img/postoffice.png) no-repeat -52px 0
+}
+
+header div ul li .micro-blog {
+	background: url(../../dist/img/postoffice.png) no-repeat -75px 0
+}
+
+header div ul li .WeChat {
+	background: url(../../dist/img/postoffice.png) no-repeat -101px 0
+}
+
+header div .search-wrap {
+	width: 225px;
+	height: 18px;
+	border: 2px solid #ccc;
+	border-radius: 23px;
+	margin-top: 5px
+}
+
+header div .search-wrap input {
+	float: left;
+	outline: none;
+	width: 87%;
+	height: 100%;
+	margin-left: 10px;
+	border: 0
+}
+
+header div .search-wrap img {
+	display: block;
+	float: right;
+	height: 95%;
+	margin-right: 4px;
+	border-radius: 100%;
+	cursor: pointer
+}
+
+.menu {
+	width: 100%;
+	height: 37px;
+	background: #005293
+}
+
+.menu .OutsideList {
+	width: 69%;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around
+}
+
+.menu .OutsideList li {
+	width: 114px;
+	height: 100%;
+	line-height: 37px;
+	text-align: center;
+	float: left;
+	font-size: 20px;
+	font-weight: 700;
+	color: #fff;
+	font-family: 微软雅黑;
+	border-right: 1px solid #fff;
+	position: relative;
+	cursor: pointer;
+}
+
+.menu .OutsideList li img {
+	margin-top: 2px;
+	height: 85%
+}
+
+.menu .OutsideList li .StateCouncil-wrap {
+	position: absolute;
+	left: -146px;
+	width: 971px;
+	height: 103px;
+	font-size: 16px;
+	font-weight: 400;
+	z-index: 2;
+	padding: 20px;
+	display: none
+}
+
+.menu .OutsideList li .StateCouncil-wrap strong {
+	display: inline-block;
+	width: 67px;
+	color: #000
+}
+
+.menu .OutsideList li .triangle {
+	position: absolute;
+	left: 39px;
+	content: "";
+	border: 12px solid transparent;
+	border-top-color: #005293;
+	z-index: 3;
+	display: none
+}
+
+.menu .OutsideList li:hover .Secondnavigation,
+.menu .OutsideList li:hover .StateCouncil-wrap,
+.menu .OutsideList li:hover .triangle {
+	display: block
+}
+
+.menu .OutsideList li .left {
+	width: 70%;
+	float: left;
+	border-right: 1px solid #000;
+	text-align: left
+}
+
+.menu .OutsideList li .left span {
+	color: #000
+}
+
+.menu .OutsideList li .left .space {
+	width: 100px
+}
+
+.menu .OutsideList li .right {
+	float: left;
+	text-align: left;
+	margin-left: 40px
+}
+
+.menu .OutsideList li .right span {
+	color: #000
+}
+
+.menu .OutsideList li .Secondnavigation {
+	margin-top: 20px;
+	width: 643%;
+	position: absolute;
+	left: -90px;
+	display: none
+}
+
+.menu .OutsideList li .Secondnavigation strong {
+	margin-right: 30px;
+	font-size: 18px;
+	text-align: center;
+	float: left;
+	color: #000
+}
+
+.menu:hover .text1 {
+	opacity: .2
+}
+
+.text1 {
+	width: 80%;
+	margin: 0 auto;
+	padding: 20px 0;
+	text-align: center;
+	color: #005293;
+	background: #fff
+}
+
+.text1 h1,
+.text1 h2 {
+	font-weight: 400
+}
+
+.text1 h1 {
+	font-size: 40px;
+	padding-bottom: 10px
+}
+
+.text1 h2 {
+	font-size: 17px
+}
+
+.Carouselfigure {
+	width: 80%;
+	margin: 140px auto 0
+}
+
+.Carouselfigure .img-wrap {
+	position: relative;
+	width: 100%;
+	height: 598px
+}
+
+.Carouselfigure .img-wrap li {
+	width: 100%;
+	position: absolute
+}
+
+.Carouselfigure .img-wrap li img {
+	width: 100%;
+	height: 100%
+}
+
+.Carouselfigure .img-wrap li:first-child {
+	z-index: 1
+}
+
+.Carouselfigure .Carouselfigure-bottom {
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	height: 30px;
+	background: #005293
+}
+
+.Carouselfigure .Carouselfigure-bottom span {
+	color: #fff
+}
+
+.Carouselfigure .Carouselfigure-bottom .indicator {
+	width: 200px;
+	height: 100%;
+	float: right
+}
+
+.Carouselfigure .Carouselfigure-bottom .indicator .on {
+	background: #fff
+}
+
+.Carouselfigure .Carouselfigure-bottom .indicator li {
+	width: 20px;
+	height: 20px;
+	float: left;
+	border-radius: 50%;
+	margin-left: 10px;
+	background: #ccc
+}
+
+.Carouselfigure a {
+	text-decoration: none;
+	display: block;
+	width: 60px;
+	height: 60px;
+	color: #fff;
+	background: #c89696;
+	text-align: center;
+	font-size: 30px;
+	line-height: 50px;
+	font-weight: 700;
+	z-index: 4;
+	position: absolute;
+	bottom: 10px
+}
+
+
+.Carouselfigure .next {
+	right: 135px
+}
+
+.content-wrap {
+	width: 80%;
+	margin: 0 auto
+}
+
+.content-wrap .content {
+	width: 100%;
+	height: 100%;
+	padding: 30px;
+	overflow: hidden
+}
+
+.content-wrap .content .L {
+	padding: 0 20px 0 0;
+	width: 36%;
+	border-right: 1px solid #000;
+	float: left
+}
+
+.content-wrap .content .L .biaoti .Title {
+	width: 100%;
+	font-size: 20px;
+	border-bottom: 1px solid #000;
+	padding-bottom: 5px
+}
+
+.content-wrap .content .L .biaoti .keqiang {
+	margin-top: 22px
+}
+
+.content-wrap .content .L .biaoti .List {
+	width: 100%;
+	height: 100%;
+	margin-bottom: 15px
+}
+
+.content-wrap .content .L .biaoti .List li {
+	font-size: 18px;
+	margin: 13px 0
+}
+
+.content-wrap .content .L .biaoti .List li .ccc {
+	color: #ccc
+}
+
+.content-wrap .content .C {
+	margin-left: 25px;
+	float: left;
+	width: 29%
+}
+
+.content-wrap .content .C .biaoti .Title {
+	width: 100%;
+	font-size: 20px;
+	border-bottom: 1px solid #000;
+	padding-bottom: 2px
+}
+
+.content-wrap .content .C .biaoti .keqiang {
+	margin-top: 20px
+}
+
+.content-wrap .content .C .biaoti .lunbo-wrap {
+	width: 285px;
+	height: 57px;
+	margin-top: 10px;
+	position: relative;
+	overflow: hidden
+}
+
+.content-wrap .content .C .biaoti .lunbo-wrap .lunbo {
+	width: 856px;
+	position: absolute;
+	left: 0
+}
+
+.content-wrap .content .C .biaoti .lunbo-wrap .lunbo li {
+	width: 285px;
+	float: left
+}
+
+.content-wrap .content .C .biaoti .lunbo-wrap .lunbo li img {
+	width: 100%
+}
+
+.content-wrap .content .C .biaoti .iWantTall {
+	margin-top: 10px
+}
+
+.content-wrap .content .C .biaoti .btn {
+	width: 98px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	color: #fff;
+	background: #0ae;
+	outline: none;
+	border: 0;
+	border-radius: 28px;
+	margin: 15px 0 15px 26px;
+	cursor: pointer
+}
+
+.content-wrap .content .C .biaoti .news1 {
+	margin-bottom: 5px
+}
+
+.content-wrap .content .C .biaoti .List {
+	width: 100%;
+	height: 100%;
+	margin-bottom: 10px
+}
+
+.content-wrap .content .C .biaoti .List li {
+	font-size: 15px;
+	line-height: 25px;
+	margin: 10px 0
+}
+
+.content-wrap .content .C .biaoti .List li .ccc {
+	color: #ccc
+}
+
+.content-wrap .content .C .biaoti .List li .guowuyuangongbao {
+	display: inline-block;
+	padding-left: 112px
+}
+
+.content-wrap .content .C .biaoti .List li .work {
+	margin-left: 20px
+}
+
+.content-wrap .content .C .biaoti .List li .heightSearch {
+	height: 30px;
+	float: right
+}
+
+.content-wrap .content .C .biaoti .List li .heightSearch a {
+	color: #000;
+	margin-right: 20px
+}
+
+.content-wrap .content .C .biaoti .List li .wenjianku-text {
+	height: 20px;
+	width: 260px;
+	margin-left: 10px;
+	margin-bottom: 10px
+}
+
+.content-wrap .content .C .biaoti .List li .biaodan {
+	width: 100%
+}
+
+.content-wrap .content .R {
+	float: left;
+	margin-left: 15px;
+	width: 25%
+}
+
+.content-wrap .content .R .ccc {
+	background: #dcdcdd;
+	padding: 15px 15px 23px
+}
+
+.content-wrap .content .R .ccc .biaoti .chaxunp {
+	border-bottom: 1px solid #000
+}
+
+.content-wrap .content .R .ccc .biaoti .Title {
+	width: 100%;
+	font-size: 20px;
+	padding-bottom: 8px
+}
+
+.content-wrap .content .R .ccc .biaoti .keqiang {
+	margin-top: 30px
+}
+
+.content-wrap .content .R .ccc .biaoti .List {
+	width: 100%;
+	height: 100%;
+	margin-bottom: 23px;
+	overflow: hidden
+}
+
+.content-wrap .content .R .ccc .biaoti .List li {
+	width: 54px;
+	height: 54px;
+	float: left;
+	font-size: 15px;
+	text-align: center;
+	margin: 18px 0
+}
+
+.content-wrap .content .R .ccc .biaoti .List li i {
+	width: 32px;
+	height: 33px;
+	display: block;
+	margin-left: 12px;
+	transition: all .2s ease-in
+}
+
+.content-wrap .content .R .ccc .biaoti .List li .i1 {
+	background: url(../img/人头1.png) no-repeat
+}
+
+.content-wrap .content .R .ccc .biaoti .List li .i2 {
+	background: url(../img/工具箱1.png) no-repeat
+}
+
+.content-wrap .content .R .ccc .biaoti .List li .i3 {
+	background: url(../img/地球1.png) no-repeat
+}
+
+.content-wrap .content .R .ccc .biaoti .List li .i4 {
+	background: url(../img/双人1.png) no-repeat
+}
+
+.content-wrap .content .R .ccc .biaoti .List li:hover .i1 {
+	background: url(../img/人头2.png) no-repeat;
+	transform: translateY(-10px)
+}
+
+.content-wrap .content .R .ccc .biaoti .List li:hover .i2 {
+	background: url(../img/工具箱2.png) no-repeat;
+	transform: translateY(-10px)
+}
+
+.content-wrap .content .R .ccc .biaoti .List li:hover .i3 {
+	background: url(../img/地球2.png) no-repeat;
+	transform: translateY(-10px)
+}
+
+.content-wrap .content .R .ccc .biaoti .List li:hover .i4 {
+	background: url(../img/双人2.png) no-repeat;
+	transform: translateY(-10px)
+}
+
+.content-wrap .content .R .ccc .biaoti .List .last {
+	width: 60px
+}
+
+.content-wrap .content .R .ccc .biaoti .List1 {
+	margin-left: 5px
+}
+
+.content-wrap .content .R .ccc .biaoti .List1 li {
+	font-size: 15px;
+	margin-top: 13px
+}
+
+.content-wrap .content .R .ccc .chaxun {
+	margin-top: 28px
+}
+
+.content-wrap .content .R .ccc .chaxun .shuju {
+	display: block;
+	width: 229px;
+	height: 46px;
+	margin: 20px auto 23px;
+	background: url(../img/数据查询1.png) no-repeat
+}
+
+.content-wrap .content .R .ccc .chaxun .shuju:hover {
+	background: url(../img/数据查询2.png) no-repeat
+}
+
+.content-wrap .content .R .ccc .chaxun .shuju .imgNews {
+	display: block;
+	margin: 23px auto 0
+}
+
+.footer {
+	width: 80%;
+	height: auto;
+	margin: 0 auto
+}
+
+.footer .top {
+	width: 95%;
+	height: 10px;
+	margin: 0 auto;
+	background: #005293
+}
+
+.footer .foot-one {
+	width: 95%;
+	margin: 0 auto;
+	overflow: hidden;
+	margin-top: 15px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ccc
+}
+
+.footer .foot-one .foot-one-list {
+	float: left;
+	margin-right: 61px
+}
+
+.footer .foot-one .foot-one-list .title {
+	font-size: 15px;
+	font-weight: 700
+}
+
+.footer .foot-one .foot-one-list li {
+	font-size: 12px
+}
+
+.footer .foot-two {
+	width: 95%;
+	margin: 0 auto;
+	padding: 0 0 15px;
+	border-bottom: 1px solid #ccc;
+	position: relative
+}
+
+.footer .foot-two .list {
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.footer .foot-two .list .list-li {
+	float: left;
+	padding: 29px 5px 0;
+	margin-left: 20px
+}
+
+.footer .foot-two .list .list-li:hover {
+	background: #e5e5e5
+}
+
+.footer .foot-two .list .list-li:hover .hid-wrap {
+	display: block
+}
+
+.footer .foot-two .list .list-li span {
+	font-size: 12px
+}
+
+.footer .foot-two .list .list-li .sanjiao {
+	margin-left: 2px;
+	display: inline-block;
+	content: "";
+	border: 8px solid transparent;
+	border-bottom-color: #666
+}
+
+.footer .foot-two .list .list-li .hid-wrap {
+	width: 1025px;
+	height: 168px;
+	overflow: auto;
+	background: #e5e5e5;
+	position: absolute;
+	left: 0;
+	top: -168px;
+	display: none
+}
+
+.footer .foot-two .list .list-li .hid-wrap ul {
+	float: left;
+	margin: 25px
+}
+
+.footer .foot-two .list .list-li .hid-wrap ul li {
+	font-size: 15px;
+	margin: 5px 0
+}
+
+.footer .foot-three {
+	width: 95%;
+	height: 234px;
+	margin: 0 auto
+}
+
+.footer .foot-three img {
+	width: 100%;
+	height: 100%
+}
